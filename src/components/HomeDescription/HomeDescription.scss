@@ -1,0 +1,21 @@
+.home-description {
+    padding: 120px 0 115px 0;
+    background-image: url("../../assets/imgs/bg-bottom.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    @media (max-width: 767px) {
+        padding: 60px 0 55px 0;
+    }
+
+    p {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: var(--light-gray);
+
+        @media (max-width: 767px) {
+            text-align: justify;
+        }
+    }
+}

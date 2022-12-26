@@ -1,0 +1,46 @@
+.actualniy-conent {
+    color: var(--white);
+
+    &__tablist {
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+        margin-bottom: 25px;
+
+        li {
+            font-weight: 400;
+            font-size: 20px;
+            color: var(--grey);
+            position: relative;
+            line-height: 28px;
+            transition: color .1s;
+            cursor: pointer;
+            outline: none;
+
+            @media (max-width: 767px) {
+                font-size: 16px;
+             }
+
+            &::after {
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: -4px;
+                width: 100%;
+                height: 0;
+                border: 2px solid var(--greenyellow);
+                border-radius: 10px;
+                visibility: hidden;
+                transition: visibility .1s;
+            }
+
+            &[aria-selected="true"] {
+                color: var(--white);
+
+                &::after {
+                    visibility: visible;
+                }
+            }
+        }
+    }
+}

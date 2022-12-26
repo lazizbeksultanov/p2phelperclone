@@ -1,0 +1,29 @@
+:root {
+    --black: #000;
+    --white: #fff;
+    --grey: #5F5F5F;
+    --greenyellow: #A6FF02;
+    --light-gray: #CDCDCD;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+ul {
+    list-style: none;
+}
+
+.base-layout__main {
+    flex: 1;
+}

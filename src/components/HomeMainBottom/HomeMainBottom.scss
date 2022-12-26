@@ -1,0 +1,35 @@
+.home-main-bottom {
+    padding: 50px 0 34px 0;
+
+    &__auto-update {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        span {
+            display: flex;
+            align-items: center;
+        }
+
+        p {
+            font-size: 14px;
+            line-height: 20px;
+            color: var(--light-gray);
+        }
+    }
+
+    &__register {
+        margin-top: 68px;
+
+        p {
+            font-weight: 400;
+            font-size: 16px;
+            color: var(--white);
+
+            a {
+                color: var(--greenyellow);
+                text-decoration: none;
+            }
+        }
+    }
+}

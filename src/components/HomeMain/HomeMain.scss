@@ -1,0 +1,17 @@
+.home-main {
+    background-color: #0C0C11;
+    position: relative;
+    margin-top: 64px;
+
+    &::after {
+        // content: "";
+        position: absolute;
+        right: 0;
+        top: 400px;
+        width: 50%;
+        height: 700px;
+        background-image: url("../../assets/imgs/bg.svg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+}

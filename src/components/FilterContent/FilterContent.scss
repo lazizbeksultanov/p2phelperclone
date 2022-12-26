@@ -1,0 +1,121 @@
+.filter-content {
+    padding-bottom: 50px;
+
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+        gap: 140px;
+
+        @media (max-width: 1279px) {
+            gap: 20px;
+        }
+
+        @media (max-width: 1023px) {
+            flex-direction: column;
+            gap: 50px;
+        }
+    }
+
+    &__right {
+        flex-basis: 50%;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    &__list-item {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+
+        @media (max-width: 1023px) {
+            gap: 20px;
+        }
+
+        @media (max-width: 480px) {
+            flex-wrap: wrap;
+        }
+
+        &.start {
+            align-items: flex-start;
+        }
+    }
+
+    &__label {
+        width: 135px;
+
+        @media (max-width: 1023px) {
+            width: 200px;
+        }
+
+        @media (max-width: 767px) {
+            width: 135px;
+        }
+
+        @media (max-width: 480px) {
+            width: 100%;
+        }
+
+        span {
+            font-weight: 400;
+            font-size: 14px;
+            color: var(--light-gray);
+            word-break: break-all;
+            word-wrap: break-word;
+        }
+    }
+
+    &__select {
+        width: 347px;
+
+        @media (max-width: 1279px) {
+            width: 300px;
+        }
+
+        @media (max-width: 1023px) {
+            flex-grow: 1;
+        }
+
+        &.input {
+            flex-basis: 225px;
+
+            @media (max-width: 480px) {
+                flex-basis: 300px;
+                flex-grow: 1;
+            }
+        }
+    }
+
+    &__groupradio {
+        display: flex;
+        flex-flow: column wrap;
+        gap: 16px;
+    }
+
+    &__radio {
+        display: flex;
+        gap: 16px;
+    }
+
+    &__groupinputs {
+        width: 225px;
+        display: grid;
+        grid-template-columns: 108px 108px;
+        gap: 8px;
+
+        @media (max-width: 480px) {
+            width: 100%;
+            grid-template-columns: calc(50% - 4px) calc(50% - 4px);
+        }
+    }
+
+    .multi-select-item {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        pointer-events: none;
+    }
+}
