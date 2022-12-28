@@ -16,7 +16,7 @@ export default function Checkbox({ label, checked }) {
               fill="none"
               viewBox="0 0 16 16"
             >
-              <rect width="16" height="16" fill="#A6FF02" rx="4"></rect>
+              <rect width="16" height="16" fill="var(--greenyellow)" rx="4"></rect>
               <path
                 stroke="#000"
                 strokeLinecap="round"

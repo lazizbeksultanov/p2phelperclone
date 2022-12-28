@@ -1,6 +1,8 @@
 .table {
     width: 100%;
     overflow-x: scroll;
+    position: relative;
+    z-index: 1;
 
     &::-webkit-scrollbar {
         height: 2px;
@@ -53,12 +55,12 @@
                 color: var(--grey);
             }
 
-            & span.red {
-                color: #DD5E5E;
+            & span.error {
+                color: var(--error);
             }
 
-            & span.green {
-                color: #6DB95A;
+            & span.success {
+                color: var(--succes);
             }
 
             @media (max-width: 767px) {

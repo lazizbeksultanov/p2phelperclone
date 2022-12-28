@@ -1,5 +1,7 @@
 .home-main-bottom {
     padding: 50px 0 34px 0;
+    position: relative;
+    z-index: 1;
 
     &__auto-update {
         display: flex;

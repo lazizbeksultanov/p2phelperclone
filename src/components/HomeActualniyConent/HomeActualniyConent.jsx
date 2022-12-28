@@ -15,8 +15,7 @@ export default function HomeActualniyConent() {
                 <FilterContent />
             </TabPanel>
             <TabPanel className="actualniy-conent__TabPanel">
-                <h3>Расширенный фильтр</h3>
-                <FilterContent />
+                <FilterContent support={true} />
             </TabPanel>
         </Tabs>
     )

@@ -10,6 +10,12 @@ import {
     CreditBankIcon,
     MTSIcon,
     PostIcon,
+    USDT,
+    BUSD,
+    BTS,
+    SHIB,
+    BNB,
+    ETH,
 } from "./../../Icons/ExportIcons";
 
 export const columns = [
@@ -55,48 +61,48 @@ export const tableMockData = [
         announcement_1: "*****",
         announcement_2: "*****",
         limits: "200 - 463.557",
-        spread: { value: "48.81%", className: "green" },
-        profit: { value: "195.24", className: "green" },
+        spread: { value: "48.81%", className: "success" },
+        profit: { value: "195.24", className: "success" },
     },
     {
         bundle: "Авторизируйтесь, чтобы увидеть связки",
         announcement_1: "*****",
         announcement_2: "*****",
         limits: "200 - 463.557",
-        spread: { value: "48.81%", className: "green" },
-        profit: { value: "195.24", className: "green" },
+        spread: { value: "48.81%", className: "success" },
+        profit: { value: "195.24", className: "success" },
     },
     {
         bundle: "Авторизируйтесь, чтобы увидеть связки",
         announcement_1: "*****",
         announcement_2: "*****",
         limits: "200 - 463.557",
-        spread: { value: "48.81%", className: "green" },
-        profit: { value: "195.24", className: "green" },
+        spread: { value: "48.81%", className: "success" },
+        profit: { value: "195.24", className: "success" },
     },
     {
         bundle: "Авторизируйтесь, чтобы увидеть связки",
         announcement_1: "*****",
         announcement_2: "*****",
         limits: "200 - 463.557",
-        spread: { value: "48.81%", className: "green" },
-        profit: { value: "195.24", className: "green" },
+        spread: { value: "48.81%", className: "success" },
+        profit: { value: "195.24", className: "success" },
     },
     {
         bundle: "Авторизируйтесь, чтобы увидеть связки",
         announcement_1: "*****",
         announcement_2: "*****",
         limits: "200 - 463.557",
-        spread: { value: "48.81%", className: "red" },
-        profit: { value: "195.24", className: "green" },
+        spread: { value: "48.81%", className: "error" },
+        profit: { value: "195.24", className: "success" },
     },
     {
         bundle: "Авторизируйтесь, чтобы увидеть связки",
         announcement_1: "*****",
         announcement_2: "*****",
         limits: "200 - 463.557",
-        spread: { value: "48.81%", className: "green" },
-        profit: { value: "195.24", className: "red" },
+        spread: { value: "48.81%", className: "success" },
+        profit: { value: "195.24", className: "error" },
     },
 ];
 
@@ -137,7 +143,7 @@ export const currency = [
     { label: "UAH", value: "id4" },
 ];
 
-export const dataCryptocurrencies = [
+export const dataMethods = [
     {
         label: (
             <span className="multi-select-item">
@@ -210,4 +216,68 @@ export const dataCryptocurrencies = [
         ),
         value: "PostBank",
     },
+];
+
+export const dataCryptocurrencies = [
+    {
+        label: (
+            <span className="multi-select-item">
+                <USDT />
+                USDT
+            </span>
+        ),
+        value: "USDT",
+    },
+    {
+        label: (
+            <span className="multi-select-item">
+                <BUSD />
+                BUSD
+            </span>
+        ),
+        value: "BUSD",
+    },
+    {
+        label: (
+            <span className="multi-select-item">
+                <BTS />
+                BTS
+            </span>
+        ),
+        value: "BTS",
+    },
+    {
+        label: (
+            <span className="multi-select-item">
+                <SHIB />
+                SHIB
+            </span>
+        ),
+        value: "SHIB",
+    },
+    {
+        label: (
+            <span className="multi-select-item">
+                <BNB />
+                BNB
+            </span>
+        ),
+        value: "BNB",
+    },
+    {
+        label: (
+            <span className="multi-select-item">
+                <ETH />
+                ETH
+            </span>
+        ),
+        value: "ETH",
+    },
+];
+
+export const makerData = [
+    { label: "Мейкер-Мейкер", value: "id1" },
+    { label: "Тейкер-Мейкер", value: "id2" },
+    { label: "Мейкер-Тейкер", value: "id3" },
+    { label: "Тейкер-Тейкер", value: "id4" },
 ];

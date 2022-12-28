@@ -41,12 +41,12 @@ export default function InputRadio({ label, name,checked }) {
               fill="none"
               viewBox="0 0 16 16"
             >
-              <circle cx="8" cy="8" r="8" fill="#A6FF02"></circle>
+              <circle cx="8" cy="8" r="8" fill="var(--greenyellow)"></circle>
               <circle
                 cx="8"
                 cy="8"
                 r="5.5"
-                fill="#A6FF02"
+                fill="var(--greenyellow)"
                 stroke="url(#paint0_linear_23_762)"
               ></circle>
               <defs>

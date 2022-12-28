@@ -1,6 +1,8 @@
 .table-section {
     &__tablist {
         justify-content: center;
+        position: relative;
+        z-index: 1;
     }
 
     &__pagination {

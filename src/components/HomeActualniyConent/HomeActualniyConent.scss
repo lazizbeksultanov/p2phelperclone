@@ -1,5 +1,7 @@
 .actualniy-conent {
     color: var(--white);
+    position: relative;
+    z-index: 2;
 
     &__tablist {
         display: flex;
@@ -16,6 +18,7 @@
             transition: color .1s;
             cursor: pointer;
             outline: none;
+            user-select: none;
 
             @media (max-width: 767px) {
                 font-size: 16px;

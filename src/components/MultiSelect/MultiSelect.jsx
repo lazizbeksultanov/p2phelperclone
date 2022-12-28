@@ -15,7 +15,7 @@ export default function MultiSelect({ options, onCreateOption, setValue, value, 
                 border: "0",
                 boxShadow: shadow ? shadow : shadowIsOpen,
                 borderRadius: state?.menuIsOpen ? '4px 4px 0 0' : "4px",
-                background: "#161616",
+                background: "var(--main-color)",
                 paddingLeft: "6px",
                 paddingRight: "16px",
                 minHeight: "32px"
@@ -24,17 +24,17 @@ export default function MultiSelect({ options, onCreateOption, setValue, value, 
         container: (base, state) => ({
             ...base,
             borderRadius: state?.menuIsOpen ? '4px 4px 0 0' : "4px",
-            background: "#161616",
+            background: "var(--main-color)",
             minHeight: "32px"
         }),
         menu: (base) => ({
             ...base,
             marginTop: "2px",
-            background: "#161616"
+            background: "var(--main-color)"
         }),
         option: (base) => ({
             ...base,
-            background: base.isSelected ? "red" : "#161616",
+            background: base.isSelected ? "red" : "var(--main-color)",
             position: "relative",
             paddingLeft: "16px",
             paddingRight: "16px",
@@ -90,6 +90,10 @@ export default function MultiSelect({ options, onCreateOption, setValue, value, 
             fontWeight: 400,
             fontSize: "14px",
             color: "var(--grey)",
+            maxWidth: "100%",
+            overflow: "hidden",
+            textOverflow: "ellipsis",
+            whiteSpace: "nowrap",
         }),
         indicatorSeparator: (base) => ({
             ...base,

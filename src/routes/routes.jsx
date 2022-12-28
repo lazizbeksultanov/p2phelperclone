@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { lazy } from 'react';
 import { useRoutes } from 'react-router';
-import Home from './../pages/Home';
+const Home = lazy(() => import("./../pages/Home"));
 
 export default function Routes() {
 

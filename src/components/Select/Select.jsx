@@ -10,7 +10,7 @@ const style = {
             border: "0",
             boxShadow: state?.menuIsOpen ? '0 0 0 1px var(--grey)' : "none",
             borderRadius: state?.menuIsOpen ? '4px 4px 0 0' : "4px",
-            background: "#161616",
+            background: "var(--main-color)",
             paddingLeft: "6px",
             paddingRight: "16px",
             minHeight: "32px"
@@ -19,13 +19,13 @@ const style = {
     container: (base, state) => ({
         ...base,
         borderRadius: state?.menuIsOpen ? '4px 4px 0 0' : "4px",
-        background: "#161616",
+        background: "var(--main-color)",
         height: "32px"
     }),
     menu: (base) => ({
         ...base,
         marginTop: "2px",
-        background: "#161616"
+        background: "var(--main-color)"
     }),
     singleValue: (base) => ({
         ...base,
@@ -35,7 +35,7 @@ const style = {
     }),
     option: (base) => ({
         ...base,
-        background: base.isSelected ? "red" : "#161616",
+        background: base.isSelected ? "red" : "var(--main-color)",
         position: "relative",
         paddingLeft: "16px",
         paddingRight: "16px",
@@ -91,8 +91,8 @@ const style = {
     }),
 };
 
-export default function SelectCustom({ data, placeholder }) {
-    const [value, setValue] = useState("");
+export default function SelectCustom({ data, placeholder, newValue }) {
+    const [value, setValue] = useState(undefined);
     const handleChange = (selectedOption) => {
         setValue(selectedOption);
     };
@@ -101,7 +101,7 @@ export default function SelectCustom({ data, placeholder }) {
         <div className='custom-select'>
             <Select
                 placeholder={placeholder}
-                value={value}
+                value={value ?? newValue}
                 onChange={handleChange}
                 options={data}
                 defaultValue={data?.[0]}
