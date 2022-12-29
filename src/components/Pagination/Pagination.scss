@@ -3,6 +3,8 @@
   align-items: center;
   gap: 8px;
   user-select: none;
+  position: relative;
+  z-index: 1;
 
   .page-item {
     border-radius: 4px;
@@ -19,7 +21,7 @@
         padding-right: 0;
 
         &.disabled {
-          color: var(--grey);          
+          color: var(--grey);
         }
       }
     }

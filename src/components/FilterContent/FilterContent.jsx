@@ -39,7 +39,7 @@ export default function FilterContent({ support }) {
             </li>
             <li className="filter-content__list-item">
               <div className="filter-content__select input">
-                <Input placeholder="Depozit" type="number" />
+                <Input placeholder="Депозит" type="number" />
               </div>
             </li>
             <li className="filter-content__list-item col-3">
@@ -52,7 +52,7 @@ export default function FilterContent({ support }) {
                 />
               </div>
             </li>
-            <li className={support ? "filter-content__list-item start w-25" : "filter-content__list-item start w-33"}>
+            <li className={"filter-content__list-item start w-25"}>
               <div className="filter-content__select">
                 <MultiSelect
                   label="Методы оплаты покупки "
@@ -62,22 +62,17 @@ export default function FilterContent({ support }) {
                 />
               </div>
             </li>
-            {
-              support ?
-                <li className="filter-content__list-item start w-25">
-                  <div className="filter-content__select">
-                    <MultiSelect
-                      label="Методы оплаты продажи "
-                      value={valueMethods2}
-                      setValue={setValueMethods2}
-                      options={dataMethods}
-                    />
-                  </div>
-                </li>
-                :
-                null
-            }
-            <li className={support ? "filter-content__list-item start w-25" : "filter-content__list-item start w-33"}>
+            <li className="filter-content__list-item start w-25">
+              <div className="filter-content__select">
+                <MultiSelect
+                  label="Методы оплаты продажи "
+                  value={valueMethods2}
+                  setValue={setValueMethods2}
+                  options={dataMethods}
+                />
+              </div>
+            </li>
+            <li className="filter-content__list-item w-25">
               <div className="filter-content__select">
                 <MultiSelect
                   label="Площадки 1"
@@ -87,7 +82,7 @@ export default function FilterContent({ support }) {
                 />
               </div>
             </li>
-            <li className={support ? "filter-content__list-item start w-25" : "filter-content__list-item start w-33"}>
+            <li className="filter-content__list-item w-25">
               <div className="filter-content__select">
                 <MultiSelect
                   label="Площадки 2"
